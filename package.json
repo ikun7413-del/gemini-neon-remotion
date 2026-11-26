@@ -1,0 +1,25 @@
+{
+  "name": "gemini-neon-remotion",
+  "version": "1.0.0",
+  "description": "Remotion recreation of the Gemini 4 Neon illustrated NLE editor motion graphic",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "studio": "remotion studio src/index.ts",
+    "generate-audio": "node scripts/generate-audio.mjs",
+    "render": "remotion render src/index.ts GeminiNeonEditor out/gemini-neon.mp4",
+    "build": "remotion bundle src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
